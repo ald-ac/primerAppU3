@@ -21,10 +21,10 @@ public class ConversorDecimal {
                         new OutputStreamWriter(cliente.getOutputStream()),true);
             String datos = entrada.readLine();
             int numeroDec = Integer.parseInt(datos);
-            String sSalida = "RESULTADOS \n" +
-                            "Binario: " + Integer.toBinaryString(numeroDec) + "\n" +
-                            "Octal: " + Integer.toOctalString(numeroDec) + "\n" +
-                            "Hexadecimal: " + Integer.toHexString(numeroDec);
+            String sSalida = "RESULTADOS" +
+                            "-Binario: " + Integer.toBinaryString(numeroDec) +
+                            "-Octal: " + Integer.toOctalString(numeroDec) +
+                            "-Hexadecimal: " + Integer.toHexString(numeroDec);
             salida.println(sSalida);
             cliente.close();
         }
